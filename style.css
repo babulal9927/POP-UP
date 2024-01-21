@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    font-family: ' Poppins',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+body{
+    overflow: hidden;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+ section .box-container{
+    border: none;
+    position: fixed;
+}
+
+section.show .box-container{
+    display: none;
+}
+
+.box-container img{
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    border: 2px solid blue;
+}
+
+.box{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2px;
+    color: #333;
+}
+
+.box h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+.box p{
+    color: #666;
+}
+
+.button{
+    background: blue;
+    color: #f7f7f7;
+    width: 160px;
+    height: 35px;
+    border-radius: 6px;
+    justify-content: center;
+    margin-top: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button i{
+    color: #fff;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    font-size: 16px;
+    background-color:blue ;
+}
+
+.button input{
+  color: #f7f7f7;
+  background: blue;
+  border: none;
+ font-size: 17px;
+  cursor: pointer;
+}
+
+ section .pop-outer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.3);
+   position: absolute;
+   opacity: 0; 
+    pointer-events: none;
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+   transform: scale(1.2); 
+     transition: opacity 0.2s 0s ease-in-out,  
+                transform 0.2s 0s ease-in-out;
+
+}
+
+section.show .pop-outer{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+section .pop-box{
+    position: relative;
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 380px;
+    width: 100%;
+}
+
+ .pop-box i{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #333;
+    background: #b4b4b4;
+    transform: all 0.2s ease;
+    cursor: pointer;
+}
+
+.pop-box i:hover{
+    color: #333;
+}
+
+.pop-box .pop-img{
+ display: flex;
+ margin-bottom: 20px;
+ align-items: center;
+}
+
+.pop-img img{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid blue;
+}
+
+.pop-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.pop-text h4{
+     font-size: 14px;
+     font-family: 400;
+
+}
+
+.pop-text  p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -4px;
+}
+
+textarea{
+    outline: none;
+    width: 100%;
+    height: 140px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    border-radius: 6px;
+    resize: none;
+    padding: 10px 10px 10px 14px;
+    background: #f3f3f3;
+
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.cancel{
+    border: none;
+    font-size: 17px;
+    /* margin-top: 10px; */
+    width: 72px;
+    height: 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: palevioletred;
+    color: #f7f7f7;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+#send{
+    border: none;
+    font-size: 18px;
+    width: 72px;
+    height: 28px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: blue;
+    color: #f7f7f7;
+
+}
